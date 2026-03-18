@@ -14,7 +14,7 @@ const translations = {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
     enseignements: "Teaching (FR)", cv: "CV", contact: "Contact",
     downloadPdf: "Download (PDF)",
-    welcome: "Welcome to my personal website !",
+    welcome: "Welcome to my personal website!",
     welcomeSub: "I am a PHD student at Université de Lorraine since october 2025. I am working on shape optimization applied to chirurgical stents. My supervisors are Stéphane Cotin, Yannick Privat and Michel Duprez, and I am also working with Raphaël Bulle on these subjects.",
     documentsIntro: "Some documents related to my academic career, mathematic curiosities or other.",
     docName: "Document name", docDesc: "Short document description.",
