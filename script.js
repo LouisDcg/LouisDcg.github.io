@@ -159,7 +159,7 @@ function renderDocuments() {
 
 function renderEnseignements() {
   const data = {
-    "2025-2026 (Mines de Nancy)": [{ niveau: "L3/1ère année", titre: "TD : Probabilités (39h)", desc: "TD de Probabilités mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
+    "2025-2026 (Mines de Nancy)": [{ niveau: "L3/1ère année", titre: "TD : Probabilités (40h)", desc: "TD de Probabilités mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
                                    { niveau: "L3/1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
                                    { niveau: "M2/3ème année", titre: "Encadrement de projet 3A", desc: "Sujet : Une méthode éléments finis des frontières immergées : φ-FEM."}],
   };
