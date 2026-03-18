@@ -127,7 +127,7 @@ function renderAccueil() {
 
 function renderPublications() {
   const data = {
-    "2026": [{ title: "/", article: "#", pdf: "#", hal: "#" }],
+    "2026": [{ title: "/", article: "#", pdf: "#", hal: "https://arxiv.org/abs/2206.04357" }],
   };
   const years = Object.keys(data).sort((a, b) => b - a);
   return `<section>
