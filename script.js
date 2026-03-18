@@ -5,7 +5,7 @@ const translations = {
     enseignements: "Enseignements", cv: "CV", contact: "Contact",
     downloadPdf: "Télécharger (PDF)",
     welcome: "Bienvenue sur mon site web (en construction).",
-    welcomeSub: "",
+    welcomeSub: "...",
     documentsIntro: "Ressources et archives en téléchargement libre.",
     docName: "Nom du document", docDesc: "Description courte du document.",
     formation: "Formation", experience: "Expérience", present: "Présent",
@@ -13,10 +13,10 @@ const translations = {
   },
   en: {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
-    enseignements: "Teaching", cv: "CV", contact: "Contact",
+    enseignements: "Teaching (FR)", cv: "CV", contact: "Contact",
     downloadPdf: "Download (PDF)",
     welcome: "Welcome to my personal website (WIP).",
-    welcomeSub: "Here you will find my publications, course materials, teaching activities and academic background.",
+    welcomeSub: "...",
     documentsIntro: "Resources and archives available for download.",
     docName: "Document name", docDesc: "Short document description.",
     formation: "Education", experience: "Experience", present: "Present",
@@ -129,10 +129,7 @@ function renderAccueil() {
 
 function renderPublications() {
   const data = {
-    "2026": [{ title: "Titre de votre article le plus récent (2026)", article: "#", pdf: "#", hal: "#" }],
-    "2024": [{ title: "Titre de votre article scientifique le plus récent", article: "#", pdf: "#", hal: "#" }],
-    "2023": [{ title: "Un autre article ou communication", article: "#", pdf: "#", hal: "#" }],
-    "2022": [{ title: "Contribution à un ouvrage collectif", article: "#", pdf: "#" }],
+    "2026": [{ title: "/", article: "#", pdf: "#", hal: "#" }],
   };
   const years = Object.keys(data).sort((a, b) => b - a);
   return `<section>
@@ -164,11 +161,9 @@ function renderDocuments() {
 
 function renderEnseignements() {
   const data = {
-    "2025-2026": [{ niveau: "Master 1", titre: "Introduction à la gestion de projet", desc: "Cours de 24h couvrant les fondamentaux de la gestion de projet." }],
-    "2024-2025": [
-      { niveau: "Licence 3", titre: "Méthodologie de recherche", desc: "Initiation aux méthodes qualitatives et quantitatives." },
-      { niveau: "Master 1", titre: "Introduction à la gestion de projet", desc: "Cours de 24h couvrant les fondamentaux de la gestion de projet." },
-    ],
+    "2025-2026 (Mines de Nancy)": [{ niveau: "L3/1ère année", titre: "TD : Probabilités (39h)", desc: "TD de Probabilités mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
+                                   { niveau: "L3/1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
+                                   { niveau: "M2/3ème année", titre: "Encadrement de projet 3A", desc: "Sujet : Une méthode éléments finis des frontières immergées : φ-FEM."}],
   };
   const years = Object.keys(data).sort((a, b) => b.localeCompare(a));
   return `<section>
