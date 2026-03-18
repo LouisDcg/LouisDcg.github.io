@@ -8,7 +8,6 @@ const translations = {
     welcomeSub: "...",
     documentsIntro: "Ressources et archives en téléchargement libre.",
     docName: "Nom du document", docDesc: "Description courte du document.",
-    formation: "Formation", experience: "Expérience", present: "Présent",
     light: "Clair", dark: "Sombre", system: "Système",
   },
   en: {
@@ -19,7 +18,6 @@ const translations = {
     welcomeSub: "...",
     documentsIntro: "Resources and archives available for download.",
     docName: "Document name", docDesc: "Short document description.",
-    formation: "Education", experience: "Experience", present: "Present",
     light: "Light", dark: "Dark", system: "System",
   }
 };
@@ -181,21 +179,15 @@ function renderCV() {
   return `<section>
     <h2 class="section-title">${t("cv")}</h2>
     <div class="year-group">
-      <h3>${t("formation")}</h3>
+      <h3>${t("CV en Français")}</h3>
       <div class="item-block">
-        <p class="label-small">2018 — Université</p>
-        <p class="item-title">Doctorat en [Discipline]</p>
-      </div>
-      <div class="item-block">
-        <p class="label-small">2014 — Université</p>
-        <p class="item-title">Master en [Discipline]</p>
+        <p class="item-title">À venir</p>
       </div>
     </div>
     <div class="year-group">
-      <h3>${t("experience")}</h3>
+      <h3>${t("CV in English")}</h3>
       <div class="item-block">
-        <p class="label-small">2019 — ${t("present")}</p>
-        <p class="item-title">Maître de conférences — Université</p>
+        <p class="item-title">Soon</p>
       </div>
     </div>
   </section>`;
