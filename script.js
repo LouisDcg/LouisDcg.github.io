@@ -113,16 +113,16 @@ function renderAccueil() {
   return `<section>
     <div class="accueil-grid">
       <div class="text">
-        <h1>Prénom Nom</h1>
+        <h1>Louis Ducongé</h1>
         <p class="subtitle">${t("welcome")}<br><br>${t("welcomeSub")}</p>
       </div>
       <img src="https://placehold.co/192x192/e2e8f0/94a3b8?text=Photo" alt="Photo" class="photo">
     </div>
     <div class="contact-card">
       <h2>${t("contact")}</h2>
-      <div class="contact-row">${iconMail}<span>votre.email@universite.fr</span></div>
-      <div class="contact-row">${iconPhone}<span>+33 1 23 45 67 89</span></div>
-      <div class="contact-row">${iconPin}<span>Bureau X, Bâtiment Y, Université Z</span></div>
+      <div class="contact-row">${iconMail}<span>louis (dot) duconge (at) univ-lorraine (dot) fr</span></div>
+      <div class="contact-row">${iconPin}<span>Institut Élie Cartan (équipe-projet Inria SPHINX) - Université de Lorraine - Bureau 302 - 54500 Vandoeuvre-lès-Nancy</span></div>
+      <div class="contact-row">${iconPin}<span>Équipe-projet Inria MIMESIS - 2, rue Marie Hamn 67000 Strasbourg</span></div>
     </div>
   </section>`;
 }
