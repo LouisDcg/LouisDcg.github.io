@@ -1,1 +1,54 @@
-s
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louis Ducongé — Doctorant</title>
+  <meta name="description" content="Page personnelle.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div style="width:6rem"></div>
+    <ul id="nav-links" class="nav-links"></ul>
+    <div class="controls">
+      <!-- Language -->
+      <div class="dropdown">
+        <button class="ctrl-btn" id="lang-icon" aria-label="Langue"></button>
+        <div class="dropdown-menu">
+          <div class="dropdown-panel">
+            <button class="dropdown-item lang-opt" data-lang="fr" onclick="setLang('fr')">
+              <svg viewBox="0 0 36 24" class="flag"><rect width="12" height="24" fill="#002395"/><rect x="12" width="12" height="24" fill="#fff"/><rect x="24" width="12" height="24" fill="#ED2939"/></svg>
+              Français
+            </button>
+            <button class="dropdown-item lang-opt" data-lang="en" onclick="setLang('en')">
+              <svg viewBox="0 0 60 30" class="flag"><clipPath id="s1"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t1"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#s1)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t1)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Theme -->
+      <div class="dropdown">
+        <button class="ctrl-btn" aria-label="Thème">
+          <svg id="theme-icon" viewBox="0 0 24 24" style="width:14px;height:14px" fill="none" stroke="currentColor" stroke-width="2"></svg>
+        </button>
+        <div class="dropdown-menu">
+          <div class="dropdown-panel">
+            <button class="dropdown-item theme-opt" data-mode="light" onclick="setTheme('light')">☀️</button>
+            <button class="dropdown-item theme-opt" data-mode="dark" onclick="setTheme('dark')">🌙</button>
+            <button class="dropdown-item theme-opt" data-mode="system" onclick="setTheme('system')">🖥️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="content"></main>
+
+<script src="script.js"></script>
+</body>
+</html>
