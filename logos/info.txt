@@ -1,0 +1,6 @@
+In this file, you will find some logos I use for my website.
+
+Take note these logos can be found on the Internet:
+
+- GitHub logos: https://brand.github.com/foundations/logo
+- I will add links for PDF, HAL and other logos later.
