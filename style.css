@@ -75,7 +75,7 @@ nav {
 .dropdown-panel {
   background: var(--popover); border: 1px solid var(--border);
   border-radius: 0.375rem; padding: 0.25rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  min-width: 120px;
+  min-width: 10px;
 }
 .dropdown-item {
   display: flex; align-items: center; gap: 0.5rem; width: 100%;
