@@ -126,7 +126,7 @@ function renderAccueil() {
       <div class="contact-row">${iconPin}<span>Institut Élie Cartan (équipe-projet Inria SPHINX) - Université de Lorraine - Bureau 302 - 54500 Vandoeuvre-lès-Nancy</span></div>
       <div class="contact-row">${iconPin}<span>Équipe-projet Inria MIMESIS - 2, rue Marie Hamn 67000 Strasbourg</span></div>
 	  <h2>${t("linksPerso")}</h2>
-	  <div class="contact-row"><a href="https://github.com/LouisDcg"><img src="logos/GitHub_Invertocat_Black_Clearspace.png" alt="GitHub" style="width: 24px"></a> <a href="https://github.com/LouisDcg" class="doc-link" style="font-size:1.1rem; height:40px">Github</a></span></div>
+	  <div class="contact-row"><a href="https://github.com/LouisDcg"><img src="logos/GitHub_Invertocat_Black_Clearspace.png" alt="GitHub" style="width: 24px"></a> <a href="https://github.com/LouisDcg" class="doc-link" style="font-size:1.1rem; height:40px">GitHub</a></span></div>
     </div>
   </section>`;
 }
