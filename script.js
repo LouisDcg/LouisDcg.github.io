@@ -126,7 +126,7 @@ function renderAccueil() {
       <div class="contact-row">${iconPin}<span>Institut Élie Cartan (équipe-projet Inria SPHINX) - Université de Lorraine - Bureau 302 - 54500 Vandoeuvre-lès-Nancy</span></div>
       <div class="contact-row">${iconPin}<span>Équipe-projet Inria MIMESIS - 2, rue Marie Hamn 67000 Strasbourg</span></div>
 	  <h2>${t("linksPerso")}</h2>
-	  <div class="contact-row"><a href="https://github.com/LouisDcg"><img src="logos/GitHub_Invertocat_Black_Clearspace.png" alt="GitHub" style="width: 24px"></a> <a href="https://github.com/LouisDcg" class="doc-link" style="font-size:1.1rem; height:40px">GitHub</a></span></div>
+	  <div class="contact-row"><a href="https://github.com/LouisDcg"><img src="logos/GitHub_Invertocat_Black_Clearspace.png" alt="GitHub" style="width: 24px"></a> <a href="https://github.com/LouisDcg" class="doc-link" style="font-size:1.1rem; height:40px">Github</a></span></div>
     </div>
   </section>`;
 }
@@ -160,7 +160,7 @@ function renderDocuments() {
 	  <div class="item-block">
         <p class="item-title">${t("2025 - Optimisation de forme appliquée à la conception de stents chirurgicaux")}</p>
         <p class="item-desc">${t("Mémoire de Master (M2) sur l'optimisation de forme, début d'application à un système élastique. J'y parle aussi de φ-FEM, reach, inégalité de Korn...")}</p>
-<p class="item-desc">Attention : il s'agissait d'un travail préliminaire et introductif, notamment pour mieux comprendre les notions abordées et les enjeux de la thèse ; il n'y a aucun nouveau résultat dans ce mémoire.</p>
+		<p class="item-desc">Attention : il s'agissait d'un travail préliminaire et introductif, notamment pour mieux comprendre les notions abordées et les enjeux de la thèse ; il n'y a aucun nouveau résultat dans ce mémoire.</p>
 		<p class = "item-desc">Encadré par <a href="https://stephanecotin.com/" class="doc-link">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link">Yannick Privat</a> et <a href="https://rbulle.github.io/" class="doc-link">Raphaël Bulle</a>.</p>
         <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/M%C3%A9moire%20de%20M2%20-%20Optimisation%20de%20forme%20appliqu%C3%A9e%20%C3%A0%20la%20conception%20de%20stents%20chirurgicaux.pdf" class="doc-link">${t("downloadPdf")}</a>
       </div>
@@ -184,7 +184,7 @@ function renderEnseignements() {
   const data = {
     "2025-2026 (Mines de Nancy)": [{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "TD de Probabilités mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
                                    { niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
-                                   { niveau: "3ème année", titre: "Encadrement de projet 3A", desc: "Sujet : `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
+                                   { niveau: "3ème année", titre: "Encadrement de projet 3A", desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
   };
   const years = Object.keys(data).sort((a, b) => b.localeCompare(a));
   return `<section>
