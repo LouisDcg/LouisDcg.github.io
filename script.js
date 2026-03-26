@@ -9,7 +9,8 @@ const translations = {
     documentsIntro: "Quelques documents relatifs à mon parcours, des curiosités mathématiques ou autre.",
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
-	infoAgreg: `Pour information, je suis titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème).`
+	infoAgreg: `Pour information, je suis titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème).`,
+	linksPerso: `Liens`
   },
   en: {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
@@ -20,7 +21,8 @@ const translations = {
     documentsIntro: "Some documents related to my academic career, mathematic curiosities or other.",
     docName: "Document name", docDesc: "Short document description.",
     light: "Light", dark: "Dark", system: "System",
-	infoAgreg: `For information, I have the "Agrégation externe de Mathématiques" since 2024 (113th).`
+	infoAgreg: `For information, I have the "Agrégation externe de Mathématiques" since 2024 (113th).`,
+	linksPerso: `Links`
   }
 };
 
@@ -123,6 +125,8 @@ function renderAccueil() {
       <div class="contact-row">${iconMail}<span>louis (dot) duconge (at) univ-lorraine (dot) fr</span></div>
       <div class="contact-row">${iconPin}<span>Institut Élie Cartan (équipe-projet Inria SPHINX) - Université de Lorraine - Bureau 302 - 54500 Vandoeuvre-lès-Nancy</span></div>
       <div class="contact-row">${iconPin}<span>Équipe-projet Inria MIMESIS - 2, rue Marie Hamn 67000 Strasbourg</span></div>
+	  <h2>${t("linksPerso")}</h2>
+	  <div class="contact-row"><a href="https://github.com/LouisDcg"><img src="logos/GitHub_Invertocat_Black_Clearspace.png" alt="GitHub" style="width: 24px"></a> <a href="https://github.com/LouisDcg" class="doc-link" style="font-size:1.1rem; height:40px">Github</a></span></div>
     </div>
   </section>`;
 }
