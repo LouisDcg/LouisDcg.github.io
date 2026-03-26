@@ -3,7 +3,7 @@ const translations = {
   fr: {
     accueil: "Accueil", publications: "Recherche, publications", documents: "Documents",
     enseignements: "Enseignements", cv: "CV", contact: "Contact",
-    downloadPdf: "Télécharger (PDF)",
+    downloadPdf: "Télécharger le PDF",
     welcome: "Bienvenue sur mon site web ! (WIP, dernière màj : 18/03/2026)",
     welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis supervisé par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> et <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, et je travaille également avec <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> sur ces sujets.`,
     documentsIntro: "Quelques documents relatifs à mon parcours, des curiosités mathématiques ou autre.",
@@ -13,7 +13,7 @@ const translations = {
   en: {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
     enseignements: "Teaching (FR)", cv: "CV", contact: "Contact",
-    downloadPdf: "Download (PDF)",
+    downloadPdf: "Download the PDF file",
     welcome: "Welcome to my personal website! (WIP, last update: 18/03/2026)",
     welcomeSub: `I am a PHD student at Université de Lorraine since october 2025. I am working on shape optimization applied to chirurgical stents. My supervisors are <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> and <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, and I am also working with <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> on these subjects.`,
     documentsIntro: "Some documents related to my academic career, mathematic curiosities or other.",
@@ -156,19 +156,19 @@ function renderDocuments() {
         <p class="item-desc">${t("Mémoire de Master (M2) sur l'optimisation de forme, début d'application à un système élastique. J'y parle aussi de φ-FEM, reach, inégalité de Korn...")}</p>
 <p class="item-desc">Attention : il s'agissait d'un travail préliminaire et introductif, notamment pour mieux comprendre les notions abordées et les enjeux de la thèse ; il n'y a aucun nouveau résultat dans ce mémoire.</p>
 		<p class = "item-desc">Encadré par <a href="https://stephanecotin.com/" class="doc-link">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link">Yannick Privat</a> et <a href="https://rbulle.github.io/" class="doc-link">Raphaël Bulle</a>.</p>
-        <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/M%C3%A9moire%20de%20M2%20-%20Optimisation%20de%20forme%20appliqu%C3%A9e%20%C3%A0%20la%20conception%20de%20stents%20chirurgicaux.pdf" class="doc-link">${t("Télécharger le PDF")}</a>
+        <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/M%C3%A9moire%20de%20M2%20-%20Optimisation%20de%20forme%20appliqu%C3%A9e%20%C3%A0%20la%20conception%20de%20stents%20chirurgicaux.pdf" class="doc-link">${t("downloadPdf")}</a>
       </div>
 	  <div class="item-block">
         <p class="item-title">${t("2023 - Les théorèmes de Hermite-Lindemann et de Lindemann-Weierstrass")}</p>
         <p class="item-desc">${t("Mémoire de Magistère (M2) sur ces deux théorèmes de théorie des nombres.")}</p>
 		<p class = "item-desc">Encadré par <a href="https://rivoal.perso.math.cnrs.fr/" class="doc-link">Tanguy RIVOAL</a>.</p>
-        <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Magist%C3%A8re%20-%20Les%20th%C3%A9or%C3%A8mes%20de%20Hermite-Lindemann%20et%20de%20Lindermann-Weierstrass%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">${t("Télécharger le PDF")}</a>
+        <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Magist%C3%A8re%20-%20Les%20th%C3%A9or%C3%A8mes%20de%20Hermite-Lindemann%20et%20de%20Lindermann-Weierstrass%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">${t("downloadPdf")}</a>
       </div>
       <div class="item-block">
         <p class="item-title">${t("2023 - Le théorème d'interpolation de Riesz-Thorin et applications")}</p>
         <p class="item-desc">${t("Mémoire de TER (M1) sur ce théorème et quelques applications : transformation de Fourier, inégalité de Young, équation de la chaleur...")}</p>
 		<p class = "item-desc">${t("Encadré par Éric DUMAS.")}</p>
-        <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/TER%20-%20Le%20th%C3%A9or%C3%A8me%20d'interpolation%20de%20Riesz-Thorin%20et%20applications%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">${t("Télécharger le PDF")}</a>
+        <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/TER%20-%20Le%20th%C3%A9or%C3%A8me%20d'interpolation%20de%20Riesz-Thorin%20et%20applications%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">${t("downloadPdf")}</a>
       </div>
     </div>
   </section>`;
