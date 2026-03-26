@@ -180,7 +180,7 @@ function renderEnseignements() {
   const data = {
     "2025-2026 (Mines de Nancy)": [{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "TD de Probabilités mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
                                    { niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
-                                   { niveau: "3ème année", titre: "Encadrement de projet 3A", desc: "Sujet : Une méthode éléments finis des frontières immergées : φ-FEM."}],
+                                   { niveau: "3ème année", titre: "Encadrement de projet 3A", desc: "Sujet : `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
   };
   const years = Object.keys(data).sort((a, b) => b.localeCompare(a));
   return `<section>
