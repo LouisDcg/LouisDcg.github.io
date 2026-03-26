@@ -154,6 +154,7 @@ function renderDocuments() {
 	  <div class="item-block">
         <p class="item-title">${t("2025 - Optimisation de forme appliquée à la conception de stents chirurgicaux")}</p>
         <p class="item-desc">${t("Mémoire de Master (M2) sur l'optimisation de forme, début d'application à un système élastique. J'y parle aussi de φ-FEM, reach, inégalité de Korn...")}</p>
+<p class="item-desc">Attention : il s'agissait d'un travail préliminaire et introductif, notamment pour mieux comprendre les notions abordées et les enjeux de la thèse ; il n'y a aucun nouveau résultat dans ce mémoire.</p>
 		<p class = "item-desc">Encadré par <a href="https://stephanecotin.com/" class="doc-link">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link">Yannick Privat</a> et <a href="https://rbulle.github.io/" class="doc-link">Raphaël Bulle</a>.</p>
         <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/M%C3%A9moire%20de%20M2%20-%20Optimisation%20de%20forme%20appliqu%C3%A9e%20%C3%A0%20la%20conception%20de%20stents%20chirurgicaux.pdf" class="doc-link">${t("Télécharger le PDF")}</a>
       </div>
