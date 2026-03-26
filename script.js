@@ -116,7 +116,7 @@ function renderAccueil() {
         <h1>Louis Ducongé</h1>
         <p class="subtitle">${t("welcome")}<br><br>${t("welcomeSub")}</p>
       </div>
-      <img src="https://placehold.co/192x192/e2e8f0/94a3b8?text=Photo" alt="Photo" class="photo">
+<!--      <img src="https://placehold.co/192x192/e2e8f0/94a3b8?text=Photo" alt="Photo" class="photo"> -->
     </div>
     <div class="contact-card">
       <h2>${t("contact")}</h2>
