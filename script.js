@@ -195,7 +195,7 @@ function renderCV() {
   return `<section>
     <h2 class="section-title">${t("cv")}</h2>
     <div class="year-group">
-      <h3><p style="color:#00E6DD;"><a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/cv/CV%20Louis%20Ducong%C3%A9%20FR.pdf">${t("CV en Français")}</a></p></h3>
+      <h3><p style="color:#00E6DD;"><a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/cv/CV%20Louis%20Ducong%C3%A9%20FR.pdf" class="doc-link" style="font-size:1.3rem; font-weight: bold">${t("CV en Français")}</a></p></h3>
       <div class="item-block">
         <p class="item-title">Mis à jour le 26/03/2026</p>
       </div>
