@@ -179,9 +179,9 @@ function renderCV() {
   return `<section>
     <h2 class="section-title">${t("cv")}</h2>
     <div class="year-group">
-      <h3>${t("CV en Français")}</h3>
+      <h3>${t("<a href="https://www.mozilla.org/fr/">Test</a>")}</h3>
       <div class="item-block">
-        <p class="item-title">À venir</p>
+        <p class="item-title">Mis à jour le 26/03/2026</p>
       </div>
     </div>
     <div class="year-group">
