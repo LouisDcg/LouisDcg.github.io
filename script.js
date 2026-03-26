@@ -9,6 +9,7 @@ const translations = {
     documentsIntro: "Quelques documents relatifs à mon parcours, des curiosités mathématiques ou autre.",
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
+	infoAgreg: `Pour information, je suis titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème).`
   },
   en: {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
@@ -19,6 +20,7 @@ const translations = {
     documentsIntro: "Some documents related to my academic career, mathematic curiosities or other.",
     docName: "Document name", docDesc: "Short document description.",
     light: "Light", dark: "Dark", system: "System",
+	infoAgreg: `For information, I have the "Agrégation externe de Mathématiques" since 2024 (113th).`
   }
 };
 
@@ -183,6 +185,11 @@ function renderEnseignements() {
   const years = Object.keys(data).sort((a, b) => b.localeCompare(a));
   return `<section>
     <h2 class="section-title">${t("enseignements")}</h2>
+	<div style="margin-top:1.5rem">
+		<p class="item-desc">${t("infoAgreg")}</p>
+	</div>
+	<div style="margin-top:1.5rem">
+	</div>
     ${years.map(y => `<div class="year-group"><h3>${y}</h3>${data[y].map(e => `
       <div class="item-block">
         <p class="label-small">${e.niveau}</p>
