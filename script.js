@@ -167,7 +167,7 @@ function renderDocuments() {
       <div class="item-block">
         <p class="item-title">${t("2023 - Le théorème d'interpolation de Riesz-Thorin et applications")}</p>
         <p class="item-desc">${t("Mémoire de TER (M1) sur ce théorème et quelques applications : transformation de Fourier, inégalité de Young, équation de la chaleur...")}</p>
-		<p class = "item-desc">${t("Encadré par Éric DUMAS.")}</p>
+		<p class = "item-desc">Encadré par <a href="https://www-fourier.univ-grenoble-alpes.fr/~edumas/" class="doc-link">Éric DUMAS</a>.</p>
         <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/TER%20-%20Le%20th%C3%A9or%C3%A8me%20d'interpolation%20de%20Riesz-Thorin%20et%20applications%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">${t("downloadPdf")}</a>
       </div>
     </div>
