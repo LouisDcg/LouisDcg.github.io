@@ -5,7 +5,7 @@ const translations = {
     enseignements: "Enseignements", cv: "CV", contact: "Contact",
     downloadPdf: "Télécharger le PDF",
     welcome: "Bienvenue sur mon site web ! (WIP, dernière màj : 26/03/2026)",
-    welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis supervisé par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> et <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, et je travaille également avec <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> sur ces sujets.`,
+    welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis encadré par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> et <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, et je travaille également avec <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> sur ces sujets.`,
     documentsIntro: "Quelques documents relatifs à mon parcours, des curiosités mathématiques ou autre.",
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
