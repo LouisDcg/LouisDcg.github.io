@@ -9,7 +9,7 @@ const translations = {
     documentsIntro: `Vous trouverez ici quelques documents. Pour le moment, il n'y a que des mémoires de stages ou TER que j'ai fait durant ma scolarité universitaire, mais d'autres documents (non "officiels") pourraient s'y ajouter.`,
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
-	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème).`,
+	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème). J'ai également donné des cours particuliers (de la Première à la L2) et fait du tutorat en topologie/calcul différentiel durant ma scolarité à l'Université.`,
 	linksPerso: `Liens`
   },
   en: {
