@@ -182,9 +182,11 @@ function renderDocuments() {
 
 function renderEnseignements() {
   const data = {
-    "2025-2026 (Mines de Nancy)": [{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "Contenu : mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
-                                   { niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Contenu : minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
-                                   { niveau: "3ème année", titre: "Encadrement de projet 3A", desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
+    '2025-2026 (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>)': 								[{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "Contenu : mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
+																{ niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Contenu : minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
+																{ niveau: "3ème année", titre: "Encadrement de projet 3A", desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
+	"2023-2025 (Colleur de mathématiques)":	[{ niveau: "2024-2025 (1er semestre) - Clermont-Ferrand", titre: "MPSI, PCSI, MP et B/L", desc: `Au <a href="https://lyc-blaise-pascal-clermont.ent.auvergnerhonealpes.fr/formations/classes-preparatoires/" class="doc-link">lycée Blaise Pascal</a> (MPSI/PCSI, 1h par semaine par classe), au <a href="https://lycee-lafayette-clermont.fr/formation/?training_level=cpge" class="doc-link">lycée La Fayette</a> (MP, 1h par semaine) et au <a href="https://ambroise-brugiere-clermont-ferrand.ent.auvergnerhonealpes.fr/nos-formations/formations-post-bac/cpge-b-l/" class="doc-link">lycée Ambroise Brugière</a> (B/L 1ère et 2ème année, 1 à 2h par semaine).`},
+																{ niveau: `2023-2024 - Grenoble`, titre: "PCSI", desc: `Au <a href="https://www.lycee-champollion.fr/spip.php?rubrique334" class="doc-link">lycée Champollion</a> (1h par semaine).` }],
   };
   const years = Object.keys(data).sort((a, b) => b.localeCompare(a));
   return `<section>
