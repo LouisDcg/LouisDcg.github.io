@@ -9,7 +9,7 @@ const translations = {
     documentsIntro: "Quelques documents relatifs à mon parcours, des curiosités mathématiques ou autre.",
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
-	infoAgreg: `Pour information, je suis titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème).`,
+	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème).`,
 	linksPerso: `Liens`
   },
   en: {
@@ -21,7 +21,7 @@ const translations = {
     documentsIntro: "Some documents related to my academic career, mathematic curiosities or other.",
     docName: "Document name", docDesc: "Short document description.",
     light: "Light", dark: "Dark", system: "System",
-	infoAgreg: `For information, I have the "Agrégation externe de Mathématiques" since 2024 (113th).`,
+	infoAgreg: `I have the "Agrégation externe de Mathématiques" since 2024 (113th).`,
 	linksPerso: `Links`
   }
 };
@@ -182,8 +182,8 @@ function renderDocuments() {
 
 function renderEnseignements() {
   const data = {
-    "2025-2026 (Mines de Nancy)": [{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "TD de Probabilités mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
-                                   { niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
+    "2025-2026 (Mines de Nancy)": [{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "Contenu : mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
+                                   { niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Contenu : minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
                                    { niveau: "3ème année", titre: "Encadrement de projet 3A", desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
   };
   const years = Object.keys(data).sort((a, b) => b.localeCompare(a));
