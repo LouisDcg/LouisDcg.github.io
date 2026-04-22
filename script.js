@@ -2,9 +2,9 @@
 const translations = {
   fr: {
     accueil: "Accueil", publications: "Recherche, publications", documents: "Documents",
-    enseignements: "Enseignements", cv: "CV", contact: "Contact",
+    enseignements: "Enseignements, activités scientifiques", cv: "CV", contact: "Contact",
     downloadPdf: "Télécharger le PDF",
-    welcome: "Bienvenue sur mon site web ! (WIP, dernière màj : 02/04/2026)",
+    welcome: "Bienvenue sur mon site web ! (WIP, dernière màj : 22/04/2026)",
     welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis encadré par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> et <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, et je travaille également avec <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> sur ces sujets.`,
     documentsIntro: `Vous trouverez ici quelques documents. Pour le moment, il n'y a que des mémoires de stages ou TER que j'ai fait durant ma scolarité universitaire, mais d'autres documents (non "officiels") pourraient s'y ajouter.`,
     docName: "Nom du document", docDesc: "Description courte du document.",
@@ -14,9 +14,9 @@ const translations = {
   },
   en: {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
-    enseignements: "Teaching (FR)", cv: "CV", contact: "Contact",
+    enseignements: "Teaching, scientific activities (FR)", cv: "CV", contact: "Contact",
     downloadPdf: "Download the PDF file",
-    welcome: "Welcome to my personal website! (WIP, last update: 02/04/2026)",
+    welcome: "Welcome to my personal website! (WIP, last update: 22/04/2026)",
     welcomeSub: `I am a PHD student at Université de Lorraine since october 2025. I am working on shape optimization applied to chirurgical stents. My supervisors are <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> and <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, and I am also working with <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> on these subjects.`,
     documentsIntro: `You will find here some documents. For the moment, here are some internship dissertation or "TER" (supervised research project) I did during my universary scolarity, but other documents (non "official") should be added in the future.`,
     docName: "Document name", docDesc: "Short document description.",
@@ -182,13 +182,14 @@ function renderDocuments() {
 
 function renderEnseignements() {
   const data = {
-    '2025-2026 (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>)': 								[{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "Contenu : mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
+    '<a class="underline">Enseignements 2025-2026</a> (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>)': 								[{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "Contenu : mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
 																{ niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Contenu : minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
 																{ niveau: "3ème année", titre: "Encadrement de projet 3A", desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
-	"2023-2025 (Colleur de mathématiques)":	[{ niveau: "2024-2025 (1er semestre) - Clermont-Ferrand", titre: "MPSI, PCSI, MP et B/L", desc: `Au <a href="https://lyc-blaise-pascal-clermont.ent.auvergnerhonealpes.fr/formations/classes-preparatoires/" class="doc-link">lycée Blaise Pascal</a> (MPSI/PCSI, 1h par semaine par classe), au <a href="https://lycee-lafayette-clermont.fr/formation/?training_level=cpge" class="doc-link">lycée La Fayette</a> (MP, 1h par semaine) et au <a href="https://ambroise-brugiere-clermont-ferrand.ent.auvergnerhonealpes.fr/nos-formations/formations-post-bac/cpge-b-l/" class="doc-link">lycée Ambroise Brugière</a> (B/L 1ère et 2ème année, 1 à 2h par semaine).`},
+    '<a class="underline">Activités 2026</a>': 								[{ niveau: '2026', titre: '<a href="https://filles-et-maths.fr/rjmi/" class="doc-link-misc">RJMI 2026</a> à Strasbourg', desc: `Encadrement avec Sarah Dépernet d'un groupe de quatre lycéennes autour d'un sujet : "<a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/RJMI%202026%20-%20Une%20note%20sal%C3%A9e.pdf" class="doc-link-misc">Une note salée</a>".<br>Sujet tiré d'un problème du <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Problemes-TFJM2013-fr.pdf" class="doc-link-misc">TFJM 2013</a> (Problème 6 : "Un dîner qui va coûter cher").`}],
+	'<a class="underline">Enseignements 2023-2025</a> (Colleur de mathématiques)':	[{ niveau: "2024-2025 (1er semestre) - Clermont-Ferrand", titre: "MPSI, PCSI, MP et B/L", desc: `Au <a href="https://lyc-blaise-pascal-clermont.ent.auvergnerhonealpes.fr/formations/classes-preparatoires/" class="doc-link">lycée Blaise Pascal</a> (MPSI/PCSI, 1h par semaine par classe), au <a href="https://lycee-lafayette-clermont.fr/formation/?training_level=cpge" class="doc-link">lycée La Fayette</a> (MP, 1h par semaine) et au <a href="https://ambroise-brugiere-clermont-ferrand.ent.auvergnerhonealpes.fr/nos-formations/formations-post-bac/cpge-b-l/" class="doc-link">lycée Ambroise Brugière</a> (B/L 1ère et 2ème année, 1 à 2h par semaine).`},
 																{ niveau: `2023-2024 - Grenoble`, titre: "PCSI", desc: `Au <a href="https://www.lycee-champollion.fr/spip.php?rubrique334" class="doc-link">lycée Champollion</a> (1h par semaine).` }],
   };
-  const years = Object.keys(data).sort((a, b) => b.localeCompare(a));
+  const years = Object.keys(data);
   return `<section>
     <h2 class="section-title">${t("enseignements")}</h2>
 	<div style="margin-top:1.5rem">
