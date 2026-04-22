@@ -47,7 +47,7 @@ nav {
   backdrop-filter: blur(8px);
 }
 .nav-inner {
-  max-width: 800px; margin: 0 auto;
+  max-width: 10000px; margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between;
   padding: 1rem 1.5rem;
 }
