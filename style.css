@@ -141,7 +141,11 @@ section { animation: fadeIn 0.4s ease forwards; }
 .item-block { margin-bottom: 1rem; }
 
 .doc-link { display: inline-block; margin-top: 0.25rem; font-size: 0.875rem; color: var(--accent); }
+.doc-link-small { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); }
+.doc-link-misc { color: var(--accent); }
 .doc-link:hover { text-decoration: underline; }
+
+.underline { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
 
 @media (max-width: 640px) {
   .accueil-grid { flex-direction: column-reverse; align-items: flex-start; }
