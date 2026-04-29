@@ -4,8 +4,8 @@ const translations = {
     accueil: "Accueil", publications: "Recherche, publications", documents: "Documents",
     enseignements: "Enseignements, activités scientifiques", cv: "CV", contact: "Contact",
     downloadPdf: "Télécharger le PDF",
-    welcome: "Bienvenue sur mon site web ! (WIP, dernière màj : 22/04/2026)",
-    welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis encadré par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> et <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, et je travaille également avec <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> sur ces sujets.`,
+    welcome: "Bienvenue sur mon site web ! (WIP, dernière màj : 29/04/2026)",
+    welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis encadré par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a> et <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a>.`,
     documentsIntro: `Vous trouverez ici quelques documents. Pour le moment, il n'y a que des mémoires de stages ou TER que j'ai fait durant ma scolarité universitaire, mais d'autres documents (non "officiels") pourraient s'y ajouter.`,
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
@@ -16,8 +16,8 @@ const translations = {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
     enseignements: "Teaching, scientific activities (FR)", cv: "CV", contact: "Contact",
     downloadPdf: "Download the PDF file",
-    welcome: "Welcome to my personal website! (WIP, last update: 22/04/2026)",
-    welcomeSub: `I am a PHD student at Université de Lorraine since october 2025. I am working on shape optimization applied to chirurgical stents. My supervisors are <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a> and <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a>, and I am also working with <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a> on these subjects.`,
+    welcome: "Welcome to my personal website! (WIP, last update: 29/04/2026)",
+    welcomeSub: `I am a PHD student at Université de Lorraine since october 2025. I am working on shape optimization applied to chirurgical stents. My supervisors are <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a> and <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a>.`,
     documentsIntro: `You will find here some documents. For the moment, here are some internship dissertation or "TER" (supervised research project) I did during my universary scolarity, but other documents (non "official") should be added in the future.`,
     docName: "Document name", docDesc: "Short document description.",
     light: "Light", dark: "Dark", system: "System",
@@ -133,7 +133,7 @@ function renderAccueil() {
 
 function renderPublications() {
   const data = {
-    "2026": [{ title: "/", article: "#", pdf: "#", hal: "#" }],
+    "2026": [{ title: "[En cours d'écriture] Shape optimization using φ-FEM - Avec R. Bulle, S. Cotin, J. Díaz-Avalos, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" }],
   };
   const years = Object.keys(data).sort((a, b) => b - a);
   return `<section>
@@ -212,7 +212,7 @@ function renderCV() {
     <div class="year-group">
       <h3><p style="color:#00E6DD;"><a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/cv/CV%20Louis%20Ducong%C3%A9%20FR.pdf" class="doc-link" style="font-size:1.3rem; font-weight: bold">${t("CV en Français")}</a></p></h3>
       <div class="item-block">
-        <p class="item-title">Mis à jour le 22/04/2026</p>
+        <p class="item-title">Mis à jour le 29/04/2026</p>
       </div>
     </div>
     <div class="year-group">
