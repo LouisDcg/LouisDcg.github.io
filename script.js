@@ -27,7 +27,7 @@ const translations = {
     welcomeSubProposal2: `- my CV (in French for the moment);`,
     welcomeSubProposal3: `- some documents (in french, and for the moment only related to my university education);`,
     welcomeSubProposal4: `- my publications (no one is finished yet) and research activities;`,
-    welcomeSubProposal5: `- some  teaching information and e activities.`,
+    welcomeSubProposal5: `- some  teaching information and educational activities.`,
 	documentsIntro: `You will find here some documents. For the moment, here are some internship dissertation or "TER" (supervised research project) I did during my university education, but other documents (non "official") should be added in the future.`,
     docName: "Document name", docDesc: "Short document description.",
     light: "Light", dark: "Dark", system: "System",
