@@ -4,9 +4,14 @@ const translations = {
     accueil: "Accueil", publications: "Recherche, publications", documents: "Documents",
     enseignements: "Enseignements, activités scientifiques", cv: "CV", contact: "Contact",
     downloadPdf: "Télécharger le PDF",
-    welcome: "Bienvenue sur mon site web ! (WIP, dernière màj : 29/04/2026)",
+    welcome: "Bienvenue sur mon site web ! (dernière màj : 05/05/2026)",
     welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis encadré par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a> et <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a>.`,
-    documentsIntro: `Vous trouverez ici quelques documents. Pour le moment, il n'y a que des mémoires de stages ou TER que j'ai fait durant ma scolarité universitaire, mais d'autres documents (non "officiels") pourraient s'y ajouter.`,
+    welcomeSubProposal1: `Sur ce site, vous trouverez :`,
+    welcomeSubProposal2: `- mon CV ;`,
+    welcomeSubProposal3: `- des documents (pour le moment, uniquement des rapports ou mémoires de stage universitaires) ;`,
+    welcomeSubProposal4: `- mes publications (aucune achevée pour le moment) et activités de recherche ;`,
+    welcomeSubProposal5: `- des informations sur mes enseignements et activités pédagogiques.`,
+	documentsIntro: `Vous trouverez ici quelques documents. Pour le moment, il n'y a que des mémoires de stages ou TER que j'ai fait durant ma scolarité universitaire, mais d'autres documents (non "officiels") pourraient s'y ajouter.`,
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
 	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème). J'ai également donné des cours particuliers (de la Première à la L2) et fait du tutorat en topologie/calcul différentiel durant ma scolarité à l'Université.`,
@@ -16,9 +21,14 @@ const translations = {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
     enseignements: "Teaching, scientific activities (FR)", cv: "CV", contact: "Contact",
     downloadPdf: "Download the PDF file",
-    welcome: "Welcome to my personal website! (WIP, last update: 29/04/2026)",
+    welcome: "Welcome to my personal website! (WIP, last update: 05/05/2026)",
     welcomeSub: `I am a PHD student at Université de Lorraine since october 2025. I am working on shape optimization applied to chirurgical stents. My supervisors are <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a> and <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a>.`,
-    documentsIntro: `You will find here some documents. For the moment, here are some internship dissertation or "TER" (supervised research project) I did during my universary scolarity, but other documents (non "official") should be added in the future.`,
+    welcomeSubProposal1: `Here, you will find:`,
+    welcomeSubProposal2: `- my CV (in French for the moment);`,
+    welcomeSubProposal3: `- some documents (in french, and for the moment only related to my university education);`,
+    welcomeSubProposal4: `- my publications (no one is finished yet) and research activities;`,
+    welcomeSubProposal5: `- some  teaching information and e activities.`,
+	documentsIntro: `You will find here some documents. For the moment, here are some internship dissertation or "TER" (supervised research project) I did during my university education, but other documents (non "official") should be added in the future.`,
     docName: "Document name", docDesc: "Short document description.",
     light: "Light", dark: "Dark", system: "System",
 	infoAgreg: `I have the "Agrégation externe de Mathématiques" since 2024 (113th).`,
@@ -116,7 +126,7 @@ function renderAccueil() {
     <div class="accueil-grid">
       <div class="text">
         <h1>Louis Ducongé</h1>
-        <p class="subtitle">${t("welcome")}<br><br>${t("welcomeSub")}</p>
+        <p class="subtitle">${t("welcome")}<br><br>${t("welcomeSub")}<br><br>${t("welcomeSubProposal1")}<br>${t("welcomeSubProposal2")}<br>${t("welcomeSubProposal3")}<br>${t("welcomeSubProposal4")}<br>${t("welcomeSubProposal5")}</p>
       </div>
 <!--      <img src="https://placehold.co/192x192/e2e8f0/94a3b8?text=Photo" alt="Photo" class="photo"> -->
     </div>
