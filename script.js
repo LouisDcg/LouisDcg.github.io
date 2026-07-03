@@ -12,10 +12,14 @@ const translations = {
     welcomeSubProposal4: `- mes publications (aucune achevée pour le moment) et activités de recherche ;`,
     welcomeSubProposal5: `- des informations sur mes enseignements et activités pédagogiques.`,
 	documentsIntro: `Vous trouverez ici quelques documents. Pour le moment, il n'y a que des mémoires de stages ou TER que j'ai fait durant ma scolarité universitaire, mais d'autres documents (non "officiels") pourraient s'y ajouter.`,
+    publicationsIntro: `Vous trouverez ici mes publications, articles en cours d'écriture, posters et participations aux conférences et séminaires (hors séminaires d'équipe).`,
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
 	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème). J'ai également donné des cours particuliers (de la Première à la L2) et fait du tutorat en topologie/calcul différentiel durant ma scolarité à l'Université.`,
-	linksPerso: `Liens`
+	linksPerso: `Liens`,
+    conferencesTitle: `Conférences, séminaires`,
+    WorkInProgress: `En cours`,
+    ArticleNotFinished: "En cours, Article"
   },
   en: {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
@@ -29,10 +33,14 @@ const translations = {
     welcomeSubProposal4: `- my publications (no one is finished yet) and research activities;`,
     welcomeSubProposal5: `- some  teaching information and educational activities.`,
 	documentsIntro: `You will find here some documents. For the moment, here are some internship dissertation or "TER" (supervised research project) I did during my university education, but other documents (non "official") should be added in the future.`,
+    publicationsIntro: `You will find here my publications, articles in work in progress, posters and my participation into conferences and seminars (team seminars excluded).`,
     docName: "Document name", docDesc: "Short document description.",
     light: "Light", dark: "Dark", system: "System",
 	infoAgreg: `I have the "Agrégation externe de Mathématiques" since 2024 (113th).`,
-	linksPerso: `Links`
+	linksPerso: `Links`,
+    conferencesTitle: `Conferences, seminars`,
+    WorkInProgress: `Work in progress`,
+    ArticleNotFinished: "Work in progress, Article"
   }
 };
 
@@ -143,20 +151,32 @@ function renderAccueil() {
 
 function renderPublications() {
   const data = {
-    "2026": [{ title: "[En cours d'écriture - Article] Shape optimization using φ-FEM - Avec R. Bulle, S. Cotin, J. Díaz-Avalos, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" },
-{title: "[Poster] Shape optimization using φ-FEM - Avec R. Bulle, M. Duprez. Présenté au CANUM2026.", article: "documents/Poster - Shape optimization using phi-FEM.pdf", pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"},],
+    "2026": [{ title: "Shape optimization using φ-FEM", type: t("ArticleNotFinished"), authors: "R. Bulle, S. Cotin, J. Díaz-Avalos, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" },
+{title: `Shape optimization using φ-FEM`, type: "Poster", authors: "R. Bulle, S. Cotin, M. Duprez", article: "documents/Poster - Shape optimization using phi-FEM.pdf", pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"},],
   };
   const years = Object.keys(data).sort((a, b) => b - a);
   return `<section>
     <h2 class="section-title">${t("publications")}</h2>
+    <p style="color:var(--muted)">${t("publicationsIntro")}</p>
+	<div style="margin-top:1.5rem">
+	</div>
+    <h3 class="section-title">${t("Publications")}</h3>
     ${years.map(y => `<div class="year-group"><h3>${y}</h3>${data[y].map(p => `
       <div class="pub-item">
-        <a href="${p.article}" class="title">${p.title}</a>
+        <a href="${p.article}" class="title">[${p.type}] ${p.title} - ${p.authors}.</a>
         <div class="pub-icons">
           ${p.pdf ? `<a href="${p.pdf}" title="PDF">${pdfSvg}</a>` : ""}
           ${p.hal ? `<a href="${p.hal}" title="HAL">${halSvg}</a>` : ""}
         </div>
       </div>`).join("")}</div>`).join("")}
+    <h3 class="section-title">${t("conferencesTitle")}</h3>
+    <div style="margin-top:1.5rem">
+	  <div class="item-block">
+        <p class="item-title"><a href="https://canum2026.math.cnrs.fr/fr/" class="doc-link-item-title">CANUM 2026</a> - 1-5 juin 2026</p>
+        <p class="item-desc">${t(`Présentation du poster : "Shape Optimization using φ-FEM".`)}</p>
+		<p class = "item-desc">Réalisé avec <a href="https://rbulle.github.io/" class="doc-link">Raphaël Bulle</a>, <a href="https://stephanecotin.com/" class="doc-link">Stéphane Cotin</a> et <a href="https://michelduprez.fr/" class="doc-link">Michel Duprez</a>.</p>
+      </div>
+    </div>
   </section>`;
 }
 
