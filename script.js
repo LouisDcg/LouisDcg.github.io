@@ -15,7 +15,7 @@ const translations = {
     publicationsIntro: `Vous trouverez ici mes publications, articles en cours d'écriture, posters et participations aux conférences et séminaires (hors séminaires d'équipe).`,
     docName: "Nom du document", docDesc: "Description courte du document.",
     light: "Clair", dark: "Sombre", system: "Système",
-	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème). J'ai également donné des cours particuliers (de la Première à la L2) et fait du tutorat en topologie/calcul différentiel durant ma scolarité à l'Université.`,
+	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème). J'ai également donné des cours particuliers (Première, Terminale, PTSI, PT, BCPST 1A/2A, L2) et fait du tutorat en topologie/calcul différentiel (L3) durant ma scolarité à l'Université.`,
 	linksPerso: `Liens`,
     conferencesTitle: `Conférences, séminaires`,
     WorkInProgress: `En cours`,
