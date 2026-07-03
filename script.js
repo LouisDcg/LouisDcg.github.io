@@ -143,7 +143,8 @@ function renderAccueil() {
 
 function renderPublications() {
   const data = {
-    "2026": [{ title: "[En cours d'écriture] Shape optimization using φ-FEM - Avec R. Bulle, S. Cotin, J. Díaz-Avalos, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" }],
+    "2026": [{ title: "[En cours d'écriture - Article] Shape optimization using φ-FEM - Avec R. Bulle, S. Cotin, J. Díaz-Avalos, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" },
+{title: "[Poster] Shape optimization using φ-FEM - Avec R. Bulle, M. Duprez. Présenté au CANUM2026.", article: "documents/Poster - Shape optimization using phi-FEM.pdf", pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"},],
   };
   const years = Object.keys(data).sort((a, b) => b - a);
   return `<section>
