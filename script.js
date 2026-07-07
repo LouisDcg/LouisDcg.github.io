@@ -208,6 +208,16 @@ function renderDocuments() {
         <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/TER%20-%20Le%20th%C3%A9or%C3%A8me%20d'interpolation%20de%20Riesz-Thorin%20et%20applications%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">${t("downloadPdf")}</a>
       </div>
     </div>
+	<h3 class="section-title">${t("Développements pour l'agrégation")}</h3>
+    <div style="margin-top:1.5rem">
+	  <div class="item-block">
+        <p class="item-desc">${t("Les développements que j'ai préparé pour l'agrégation en 2024 sont disponibles :")}</p>
+		<p class="item-desc">- sur <a href="https://agreg-maths.fr/users/67078" class="doc-link">Agreg-Maths</a> ;</p>
+		<p class="item-desc">- sur <a href="https://drive.google.com/drive/folders/1T7KZF4cSU_z7ykFBe-6V9Vrg8H1go5a4?usp=sharing" class="doc-link">Google Drive</a>.</p>
+		<p class="item-desc">(Deux développements, à savoir "Théorème de Danskin" et "Décomposition des fonctions de Sobolev", ont été rajoutés a posteriori et font d'ailleurs partie de mon mémoire de stage de 2025)</p>
+		<p class="item-desc">N'hésitez pas à me contacter si vous repérez des erreurs ou en cas de question !</p>
+      </div>
+    </div>
   </section>`;
 }
 
