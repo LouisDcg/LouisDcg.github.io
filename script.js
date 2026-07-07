@@ -151,8 +151,8 @@ function renderAccueil() {
 
 function renderPublications() {
   const data = {
-    "2026": [{ title: "Shape optimization using φ-FEM", type: t("ArticleNotFinished"), authors: "R. Bulle, S. Cotin, J. Díaz-Avalos, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" },
-{title: `Shape optimization using φ-FEM`, type: "Poster", authors: "R. Bulle, S. Cotin, M. Duprez", article: "documents/Poster - Shape optimization using phi-FEM.pdf", pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"},],
+    "2026": [{ title: "Shape optimization using φ-FEM", type: t("ArticleNotFinished"), authors: "R. Bulle, S. Cotin, J. Díaz-Avalos, L. Ducongé, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" },
+{title: `Shape optimization using φ-FEM`, type: "Poster", authors: "R. Bulle, S. Cotin, L. Ducongé M. Duprez", article: "documents/Poster - Shape optimization using phi-FEM.pdf", pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"},],
   };
   const years = Object.keys(data).sort((a, b) => b - a);
   return `<section>
