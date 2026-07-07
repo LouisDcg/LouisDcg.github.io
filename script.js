@@ -4,7 +4,7 @@ const translations = {
     accueil: "Accueil", publications: "Recherche, publications", documents: "Documents",
     enseignements: "Enseignements, activités scientifiques", cv: "CV", contact: "Contact",
     downloadPdf: "Télécharger le PDF",
-    welcome: "Bienvenue sur mon site web ! (dernière màj : 03/07/2026)",
+    welcome: "Bienvenue sur mon site web ! (dernière màj : 07/07/2026)",
     welcomeSub: `Je suis doctorant à l'Université de Lorraine depuis octobre 2025. Ma thèse porte sur l'optimisation de forme appliquée à la conception de stents chirurgicaux. Je suis encadré par <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a> et <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a>.`,
     welcomeSubProposal1: `Sur ce site, vous trouverez :`,
     welcomeSubProposal2: `- mon CV ;`,
@@ -244,7 +244,7 @@ function renderCV() {
     <div class="year-group">
       <h3><p style="color:#00E6DD;"><a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/cv/CV%20Louis%20Ducong%C3%A9%20FR.pdf" class="doc-link" style="font-size:1.3rem; font-weight: bold">${t("CV en Français")}</a></p></h3>
       <div class="item-block">
-        <p class="item-title">Mis à jour le 29/04/2026</p>
+        <p class="item-title">Mis à jour le 07/07/2026</p>
       </div>
     </div>
     <div class="year-group">
