@@ -25,7 +25,7 @@ const translations = {
     accueil: "Home", publications: "Research & Publications", documents: "Documents",
     enseignements: "Teaching, scientific activities (FR)", cv: "CV", contact: "Contact",
     downloadPdf: "Download the PDF file",
-    welcome: "Welcome to my personal website! (WIP, last update: 03/07/2026)",
+    welcome: "Welcome to my personal website! (WIP, last update: 07/07/2026)",
     welcomeSub: `I am a PHD student at Université de Lorraine since october 2025. I am working on shape optimization applied to chirurgical stents. My supervisors are <a href="https://stephanecotin.com/" class="doc-link" style="font-size:1.1rem">Stéphane Cotin</a>, <a href="https://michelduprez.fr/" class="doc-link" style="font-size:1.1rem">Michel Duprez</a>, <a href="https://yannick-privat.perso.math.cnrs.fr/" class="doc-link" style="font-size:1.1rem">Yannick Privat</a> and <a href="https://rbulle.github.io/" class="doc-link" style="font-size:1.1rem">Raphaël Bulle</a>.`,
     welcomeSubProposal1: `Here, you will find:`,
     welcomeSubProposal2: `- my CV (in French for the moment);`,
