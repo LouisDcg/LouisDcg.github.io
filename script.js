@@ -82,6 +82,7 @@ let currentLang = localStorage.getItem("lang") || (navigator.language.startsWith
 let currentTheme = localStorage.getItem("theme-mode") || "system";
 let currentSection = window.location.hash.replace("#", "") || "accueil";
 
+
 function t(key) { return translations[currentLang][key] || key; }
 
 // ===== THEME =====
@@ -91,6 +92,7 @@ function applyTheme() {
   localStorage.setItem("theme-mode", currentTheme);
   updateThemeIcon();
 }
+
 
 function updateThemeIcon() {
   const isDark = document.documentElement.classList.contains("dark");
@@ -184,11 +186,27 @@ function renderAccueil() {
 
 function renderPublications() {
   const data = {
-    "2026": [{ title: "Shape optimization using φ-FEM", type: t("ArticleNotFinished"), authors: "R. Bulle, S. Cotin, J. Díaz-Avalos, L. Ducongé, M. Duprez, A. Laurain", article: "not_available_yet", pdf: "#", hal: "#" },
-{title: `Shape optimization using φ-FEM`, type: "Poster", authors: "R. Bulle, S. Cotin, L. Ducongé M. Duprez", article: "documents/Poster - Shape optimization using phi-FEM.pdf", description: "PosterDesc", pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"},],
-  };
+    "2026": [{
+    title: "Shape optimization using φ-FEM",
+    type: t("ArticleNotFinished"),
+    authors: "R. Bulle, S. Cotin, J. Díaz-Avalos, L. Ducongé, M. Duprez, A. Laurain",
+    article: "not_available_yet",
+    pdf: "#",
+    hal: "#"
+    },
+{
+title: `Shape optimization using φ-FEM`,
+type: "Poster",
+authors: "R. Bulle, S. Cotin, L. Ducongé M. Duprez",
+article: "documents/Poster - Shape optimization using phi-FEM.pdf",
+description: "PosterDesc",
+pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"
+},
+],
+  };// End of 2026
   const years = Object.keys(data).sort((a, b) => b - a);
   return `<section>
+  
     <h2 class="section-title">${t("publications")}</h2>
     <p style="color:var(--muted)">${t("publicationsIntro")}</p>
 	<div style="margin-top:1.5rem">
