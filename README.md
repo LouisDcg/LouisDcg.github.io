@@ -1,1 +1,1 @@
-Link of my website: [louisdcg.github.io]{https://louisdcg.github.io/}.
+Link of my website: https://louisdcg.github.io/.
