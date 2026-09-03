@@ -22,7 +22,7 @@ const translations = {
     light: "Clair",
     dark: "Sombre",
     system: "Système",
-	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème). J'ai également donné des cours particuliers (Première, Terminale, PTSI, PT, BCPST 1A/2A, L2) et fait du tutorat en topologie/calcul différentiel (L3) durant ma scolarité à l'Université.`,
+	infoAgreg: `Titulaire de l'Agrégation externe de Mathématiques depuis 2024 (113ème). J'ai également donné des cours particuliers (Première, Terminale, PTSI, PT, BCPST 1A/2A, L2, L3) et fait du tutorat en topologie/calcul différentiel (L3) durant ma scolarité à l'Université.`,
 	linksPerso: `Liens`,
     conferencesTitle: `Conférences, séminaires`,
     WorkInProgress: `En cours`,
@@ -184,6 +184,10 @@ function renderAccueil() {
   </section>`;
 }
 
+
+
+// PUBLICATIONS
+
 function renderPublications() {
   const data = {
     "2026": [{
@@ -197,7 +201,7 @@ function renderPublications() {
 {
 title: `Shape optimization using φ-FEM`,
 type: "Poster",
-authors: "R. Bulle, S. Cotin, L. Ducongé M. Duprez",
+authors: "R. Bulle, S. Cotin, L. Ducongé, M. Duprez",
 article: "documents/Poster - Shape optimization using phi-FEM.pdf",
 description: "PosterDesc",
 pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"
@@ -231,6 +235,11 @@ pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documen
     </div>
   </section>`;
 }
+
+
+
+
+// Documents
 
 function renderDocuments() {
   return `<section>
@@ -273,16 +282,69 @@ function renderDocuments() {
   </section>`;
 }
 
+
+
+
+// TEACHING
+
 function renderEnseignements() {
   const data = {
-    '<a class="underline">Enseignements 2026-2027</a> (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>, prévu)': 								[{ niveau: "1ère année", titre: "TD : Analyse numérique et Optimisation (56h)", desc: "Contenu : Optimisation sans contrainte, méthodes de gradient, optimalité sous contraintes, théorème de KKT, dualité, moindres carrés, régularisation, gradient stochastique." }],
-    '<a class="underline">Activités 2026</a>': 								[{ niveau: '2026', titre: '<a href="https://filles-et-maths.fr/rjmi/" class="doc-link-misc">RJMI 2026</a> à Strasbourg', desc: `Encadrement avec Sarah Dépernet d'un groupe de quatre lycéennes autour d'un sujet : "<a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/RJMI%202026%20-%20Une%20note%20sal%C3%A9e.pdf" class="doc-link-misc">Une note salée</a>".<br>Sujet tiré d'un problème du <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Problemes-TFJM2013-fr.pdf" class="doc-link-misc">TFJM² 2013</a> (Problème 6 : "Un dîner qui va coûter cher").`}],
-    '<a class="underline">Enseignements 2025-2026</a> (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>)': 								[{ niveau: "1ère année", titre: "TD : Probabilités (40h)", desc: "Contenu : mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens." },
-																{ niveau: "1ère année", titre: "TD : Recherche opérationnelle (20h)", desc: "Contenu : minimisation d'une fonctionnelle linéaire sous contraintes linéaires, algorithmes (du simplexe, ...), utilisation de AMPL."},
-																{ niveau: "3ème année", titre: "Encadrement de projet 3A", desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`}],
-	'<a class="underline">Enseignements 2023-2025</a> (Colleur de mathématiques)':	[{ niveau: "2024-2025 (1er semestre) - Clermont-Ferrand", titre: "MPSI, PCSI, MP et B/L", desc: `Au <a href="https://lyc-blaise-pascal-clermont.ent.auvergnerhonealpes.fr/formations/classes-preparatoires/" class="doc-link">lycée Blaise Pascal</a> (MPSI/PCSI, 1h par semaine par classe), au <a href="https://lycee-lafayette-clermont.fr/formation/?training_level=cpge" class="doc-link">lycée La Fayette</a> (MP, 1h par semaine) et au <a href="https://ambroise-brugiere-clermont-ferrand.ent.auvergnerhonealpes.fr/nos-formations/formations-post-bac/cpge-b-l/" class="doc-link">lycée Ambroise Brugière</a> (B/L 1ère et 2ème année, 1 à 2h par semaine).`},
-																{ niveau: `2023-2024 - Grenoble`, titre: "PCSI", desc: `Au <a href="https://www.lycee-champollion.fr/spip.php?rubrique334" class="doc-link">lycée Champollion</a> (1h par semaine).` }],
+    '<a class="underline">Enseignements 2026-2027</a> (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>, prévu)': 								[{ 
+    level: "1ère année",
+    title: "TD : Analyse numérique et Optimisation (56h)",
+    desc: "Contenu et mots-clés : Équations non linéaires et linéaires, interpolation, théorème de Cauchy-Lipschitz, estimation d'intégrales. Optimisation sans contrainte, méthodes de gradient, optimalité sous contraintes, théorème de KKT, dualité, moindres carrés, régularisation, gradient stochastique.",
+    webpage: `Pages du cours : <a href="https://yannick-privat.perso.math.cnrs.fr/cours/AnumMines.html" class="doc-link">Analyse numérique</a>  ; <a href="https://yannick-privat.perso.math.cnrs.fr/cours/OptimMines1A.html" class="doc-link">Optimisation</a>.`,
+    by: `CM assuré par <a href="https://yannick-privat.perso.math.cnrs.fr" class="doc-link">Yannick Privat</a> et <a href="https://sites.google.com/view/stantejsky/menu" class="doc-link">Dominik Stantejsky</a>.`
+    }],
+    
+    '<a class="underline">Activités 2026</a>':
+[{ 
+    level: '2026',
+    title: '<a href="https://filles-et-maths.fr/rjmi/" class="doc-link-misc">RJMI 2026</a> à Strasbourg',
+    desc: `Encadrement avec Sarah Dépernet d'un groupe de quatre lycéennes autour d'un sujet : "<a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/RJMI%202026%20-%20Une%20note%20sal%C3%A9e.pdf" class="doc-link-misc">Une note salée</a>".<br>Sujet tiré d'un problème du <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Problemes-TFJM2013-fr.pdf" class="doc-link-misc">TFJM² 2013</a> (Problème 6 : "Un dîner qui va coûter cher").`,
+    webpage: ``,
+    by: ``
+}],
+
+    '<a class="underline">Enseignements 2025-2026</a> (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>)': 								[{ 
+    level: "1ère année",
+    title: "TD : Probabilités (40h)",
+    desc: "Contenu : mesures (de probabilité), intégrale de Lebesgue, vecteurs gaussiens.",
+    webpage: ``,
+    by: `CM assuré par <a href="https://vferay.perso.math.cnrs.fr/" class="doc-link">Valentin Féray</a> et <a href="https://brieucfrenais.github.io/index.html" class="doc-link">Brieuc Frénais</a>.`
+ },
+ { 
+    level: "1ère année",
+    title: "TD : Recherche opérationnelle (20h)",
+    desc: "Contenu : minimisation d'une fonctionnelle linéaire sous contraintes linéaires, recherche du plus court chemin, algorithmes (du simplexe, ...), utilisation de AMPL.",
+    webpage: ``,
+    by: `CM assuré par <a href="https://mines-nancy.univ-lorraine.fr/collaborator/wahiba-khettaf/" class="doc-link">Wahiba Khettaf</a>.`
+ },
+ { 
+    level: "3ème année",
+    title: "Encadrement de projet 3A",
+    desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`,
+    webpage: ``,
+    by: ``
+}],
+
+	'<a class="underline">Enseignements 2023-2025</a> (Colleur de mathématiques)':
+[{ 
+    level: "2024-2025 (1er semestre) - Clermont-Ferrand",
+    title: "MPSI, PCSI, MP et B/L",
+    desc: `Au <a href="https://lyc-blaise-pascal-clermont.ent.auvergnerhonealpes.fr/formations/classes-preparatoires/" class="doc-link">lycée Blaise Pascal</a> (MPSI/PCSI, 1h par semaine par classe), au <a href="https://lycee-lafayette-clermont.fr/formation/?training_level=cpge" class="doc-link">lycée La Fayette</a> (MP, 1h par semaine) et au <a href="https://ambroise-brugiere-clermont-ferrand.ent.auvergnerhonealpes.fr/nos-formations/formations-post-bac/cpge-b-l/" class="doc-link">lycée Ambroise Brugière</a> (B/L 1ère et 2ème année, 1 à 2h par semaine).`,
+    webpage: ``,
+    by: ``
+},
+{
+    level: `2023-2024 - Grenoble`,
+    title: "PCSI",
+    desc: `Au <a href="https://www.lycee-champollion.fr/spip.php?rubrique334" class="doc-link">lycée Champollion</a> (1h par semaine).`,
+    webpage: ``,
+    by: ``
+}],
   };
+  
   const years = Object.keys(data);
   return `<section>
     <h2 class="section-title">${t("enseignements")}</h2>
@@ -293,9 +355,11 @@ function renderEnseignements() {
 	</div>
     ${years.map(y => `<div class="year-group"><h3>${y}</h3>${data[y].map(e => `
       <div class="item-block">
-        <p class="label-small">${e.niveau}</p>
-        <p class="item-title">${e.titre}</p>
+        <p class="label-small">${e.level}</p>
+        <p class="item-title">${e.title}</p>
         <p class="item-desc">${e.desc}</p>
+        <p class="item-desc">${e.webpage}</p>
+        <p class="item-desc">${e.by}</p>
       </div>`).join("")}</div>`).join("")}
   </section>`;
 }
