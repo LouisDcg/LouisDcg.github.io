@@ -345,6 +345,7 @@ function renderEnseignements() {
 }],
   };
   
+  // STRUCTURE OF TEACHING
   const years = Object.keys(data);
   return `<section>
     <h2 class="section-title">${t("enseignements")}</h2>
@@ -364,6 +365,7 @@ function renderEnseignements() {
   </section>`;
 }
 
+// CV
 function renderCV() {
   return `<section>
     <h2 class="section-title">${t("cv")}</h2>
