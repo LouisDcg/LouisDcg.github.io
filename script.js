@@ -295,7 +295,14 @@ function renderEnseignements() {
     desc: "Contenu et mots-clés : Équations non linéaires et linéaires, interpolation, théorème de Cauchy-Lipschitz, estimation d'intégrales. Optimisation sans contrainte, méthodes de gradient, optimalité sous contraintes, théorème de KKT, dualité, moindres carrés, régularisation, gradient stochastique.",
     webpage: `Pages du cours : <a href="https://yannick-privat.perso.math.cnrs.fr/cours/AnumMines.html" class="doc-link">Analyse numérique</a>  ; <a href="https://yannick-privat.perso.math.cnrs.fr/cours/OptimMines1A.html" class="doc-link">Optimisation</a>.`,
     by: `CM assuré par <a href="https://yannick-privat.perso.math.cnrs.fr" class="doc-link">Yannick Privat</a> et <a href="https://sites.google.com/view/stantejsky/menu" class="doc-link">Dominik Stantejsky</a>.`
-    }],
+    },
+{ 
+    level: "2ème ou 3ème année",
+    title: "Encadrement de projet 2A ou 3A",
+    desc: `À venir.`,
+    webpage: ``,
+    by: ``
+}],
     
     '<a class="underline">Activités 2026</a>':
 [{ 
