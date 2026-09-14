@@ -289,7 +289,7 @@ function renderDocuments() {
 
 function renderEnseignements() {
   const data = {
-    '<a class="underline">Enseignements 2026-2027</a> (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>, prévu)': 								[{ 
+    '<a class="underline">Enseignements 2026-2027</a> (<a href="https://mines-nancy.univ-lorraine.fr/" class="doc-link" style="font-size:1.2rem">Mines de Nancy</a>)': 								[{ 
     level: "1ère année",
     title: "TD : Analyse numérique et Optimisation (56h)",
     desc: "Contenu et mots-clés : Équations non linéaires et linéaires, interpolation, théorème de Cauchy-Lipschitz, estimation d'intégrales. Optimisation sans contrainte, méthodes de gradient, optimalité sous contraintes, théorème de KKT, dualité, moindres carrés, régularisation, gradient stochastique.",
