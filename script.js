@@ -204,7 +204,8 @@ type: "Poster",
 authors: "R. Bulle, S. Cotin, L. Ducongé, M. Duprez",
 article: "documents/Poster - Shape optimization using phi-FEM.pdf",
 description: "PosterDesc",
-pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20-%20Shape%20optimization%20using%20phi-FEM.pdf"
+pdf: "https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/Poster%20v2%20-%20Shape%20optimization%20using%20phi-FEM.pdf",
+hal: "https://hal.science/hal-05671337"
 },
 ],
   };// End of 2026
