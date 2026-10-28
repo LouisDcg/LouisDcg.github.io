@@ -234,7 +234,7 @@ hal: "https://hal.science/hal-05671337"
       <div class="item-block">
         <p class="item-title">Journée des doctorants <a href="https://cluster-ia-enact.ai/" class="doc-link-item-title">ENACT</a> - 8 octobre 2026</p>
         <p class="item-desc">Présentation (10min) : "Patient-specific balloon design for angioplasty by shape optimization".</p>
-        <p class="item-desc"><a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/ENACT%202026%20Presentation%20-%20Louis%20Ducong%C3%A9.odp" class="doc-link">LibreOffice Impress (.odp)</a> (recommandé) ; <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/ENACT%202026%20Presentation%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">PDF</a>.</p>
+        <p class="item-desc">Slides : <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/ENACT%202026%20Presentation%20-%20Louis%20Ducong%C3%A9.odp" class="doc-link">LibreOffice Impress (.odp)</a> (recommandé, contient sources) ; <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/ENACT%202026%20Presentation%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">PDF</a>.</p>
         <p class="item-desc"><a href="https://raw.githubusercontent.com/LouisDcg/LouisDcg.github.io/refs/heads/main/documents/ENACT%202026%20Fast%20forward%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">Fast-Forward (PDF)</a> .</p>
       </div>
     
