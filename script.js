@@ -226,13 +226,24 @@ hal: "https://hal.science/hal-05671337"
         </div>
         ${p.description ? `<p class="pub-description">${t(p.description)}</p>` : ""}
       </div>`).join("")}</div>`).join("")}
+      
+      
     <h3 class="section-title">${t("conferencesTitle")}</h3>
     <div style="margin-top:1.5rem">
+    
+      <div class="item-block">
+        <p class="item-title">Journée des doctorants <a href="https://cluster-ia-enact.ai/" class="doc-link-item-title">ENACT</a> - 8 octobre 2026</p>
+        <p class="item-desc">Présentation (10min) : "Patient-specific balloon design for angioplasty by shape optimization".</p>
+        <p class="item-desc"><a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/ENACT%202026%20Presentation%20-%20Louis%20Ducong%C3%A9.odp" class="doc-link">LibreOffice Impress (.odp)</a> (recommandé) ; <a href="https://github.com/LouisDcg/LouisDcg.github.io/raw/refs/heads/main/documents/ENACT%202026%20Presentation%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">PDF</a>.</p>
+        <p class="item-desc"><a href="https://raw.githubusercontent.com/LouisDcg/LouisDcg.github.io/refs/heads/main/documents/ENACT%202026%20Fast%20forward%20-%20Louis%20Ducong%C3%A9.pdf" class="doc-link">Fast-Forward (PDF)</a> .</p>
+      </div>
+    
 	  <div class="item-block">
         <p class="item-title"><a href="https://canum2026.math.cnrs.fr/fr/" class="doc-link-item-title">CANUM 2026</a> - 1-5 juin 2026</p>
         <p class="item-desc">${t(`Présentation du poster : "Shape Optimization using φ-FEM".`)}</p>
 		<p class = "item-desc">Réalisé avec <a href="https://rbulle.github.io/" class="doc-link">Raphaël Bulle</a>, <a href="https://stephanecotin.com/" class="doc-link">Stéphane Cotin</a> et <a href="https://michelduprez.fr/" class="doc-link">Michel Duprez</a>.</p>
       </div>
+      
     </div>
   </section>`;
 }
