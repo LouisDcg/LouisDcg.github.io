@@ -298,9 +298,9 @@ function renderEnseignements() {
     by: `CM assuré par <a href="https://yannick-privat.perso.math.cnrs.fr" class="doc-link">Yannick Privat</a> et <a href="https://sites.google.com/view/stantejsky/menu" class="doc-link">Dominik Stantejsky</a>.`
     },
 { 
-    level: "2ème ou 3ème année",
-    title: "Encadrement de projet 2A ou 3A",
-    desc: `À venir.`,
+    level: "3ème année",
+    title: "Encadrement de projet 3A",
+    desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM (conditions de Neumann)".`,
     webpage: ``,
     by: ``
 }],
@@ -331,7 +331,7 @@ function renderEnseignements() {
  { 
     level: "3ème année",
     title: "Encadrement de projet 3A",
-    desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM".`,
+    desc: `Sujet : "Une méthode éléments finis des frontières immergées : φ-FEM (conditions de Dirichlet)".`,
     webpage: ``,
     by: ``
 }],
